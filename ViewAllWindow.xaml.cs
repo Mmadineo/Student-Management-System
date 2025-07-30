@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Windows;
 
 namespace StudentManagementApp.UI
@@ -7,8 +8,13 @@ namespace StudentManagementApp.UI
         public ViewAllWindow()
         {
             InitializeComponent();
-            lvStudents.Items.Add("Student 1: ID=101, Name=Alice, Marks=90");
-            lvStudents.Items.Add("Student 2: ID=102, Name=Bob, Marks=85");
+            LoadStudents();
+        }
+
+        private void LoadStudents()
+        {
+            List<Student> allStudents = StudentRepository.GetAllStudents();
+            lvStudents.ItemsSource = allStudents;
         }
     }
 }
