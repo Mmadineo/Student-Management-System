@@ -1,0 +1,11 @@
+<Window x:Class="StudentManagementApp.UI.AddStudentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Student" Height="250" Width="300">
+    <StackPanel Margin="10">
+        <TextBox Name="txtStudentID" PlaceholderText="Student ID" Margin="5"/>
+        <TextBox Name="txtName" PlaceholderText="Name" Margin="5"/>
+        <TextBox Name="txtMarks" PlaceholderText="Marks" Margin="5"/>
+        <Button Name="btnAddStudent" Content="Add Student" Margin="5"/>
+    </StackPanel>
+</Window>

@@ -1,0 +1,10 @@
+<Window x:Class="StudentManagementApp.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Main Menu" Height="200" Width="300">
+    <StackPanel Margin="10">
+        <Button Name="btnAdd" Content="Add Student" Margin="5"/>
+        <Button Name="btnSearch" Content="Search Student" Margin="5"/>
+        <Button Name="btnViewAll" Content="View All Students" Margin="5"/>
+    </StackPanel>
+</Window>

@@ -1,0 +1,10 @@
+<Window x:Class="StudentManagementApp.UI.SearchStudentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Search Student" Height="200" Width="300">
+    <StackPanel Margin="10">
+        <TextBox Name="txtSearchID" PlaceholderText="Enter Student ID" Margin="5"/>
+        <Button Name="btnSearchStudent" Content="Search" Margin="5"/>
+        <TextBlock Name="txtResult" Margin="5"/>
+    </StackPanel>
+</Window>
